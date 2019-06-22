@@ -10,55 +10,78 @@
     />
     <link rel="stylesheet" href="./index.css" />
   </head>
-  <body>
-    <h2>Hey there 👋</h2>
-    <h1>I'm Jonathan.</h1>
-    <h2>I'm a software developer 👨‍💻</h2>
-    <main>
-      <h2>Here are some of my projects.</h2>
-      <h4>
-        But there's even more on my
-        <a href="https://github.com/jmay4826">Github.</a>
-      </h4>
-      <section>
-        <article>
+  <body class="">
+    <header>
+      <h2>Hey there 👋</h2>
+      <h1>I'm Jonathan.</h1>
+      <h2 style="margin-top: 2vh;">
+        I'm a software developer 👨‍💻 <br />who's into travel, language, education
+        and more. <br />🧳 📚 🌍 👨‍🏫 🛫
+      </h2>
+    </header>
+    <section>
+      <h3>
+        <a href="#projects">projects</a> |
+        <a href="https://linkedin.com/in/jonathanrmay">linkedin</a> |
+        <a href="https://github.com/jmay4826">github</a> |
+        <a href="mailto:portfolio@jonathanrmay.com">email</a>
+      </h3>
+    </section>
+    <main id="projects">
+      <h2>Here's some of</h2>
+      <h1>my work.</h1>
+      <section class="work-section">
+        <article class="work-item">
           <h4>Queue System</h4>
-          <img src="./img/queue.png" />
+          <div>
+            (internal project)
+          </div>
+          <p
+            class="work-image"
+            style="background-image: url('./img/queue.png')"
+          ></p>
           <caption>
-            React, Typescript, Node, GraphQL, Postgres, Redis
+            Technologies include React, Typescript, Node.js, GraphQL, and
+            PostgreSQL.
           </caption>
         </article>
-        <article>
-          <h4>Global Penpals</h4>
-          <img src="./img/queue.png" />
+        <article class="work-item">
+          <h4>
+            Global Penpals
+          </h4>
+          <div>
+            <a href="https://github.com/jmay4826/penpals-frontend"
+              >(view on github)</a
+            >
+          </div>
+          <a href="https://github.com/jmay4826/penpals-frontend" target="_blank"
+            ><p
+              class="work-image"
+              style="background-image: url('https://camo.githubusercontent.com/e63e994b6bbda97c1148aeb0b017699b8e56430e/68747470733a2f2f7265732e636c6f7564696e6172792e636f6d2f647266676b696477652f696d6167652f75706c6f61642f76313534303035363634332f70656e70616c732d6d657373616765732e706e67');"
+            ></p
+          ></a>
           <caption>
-            React, Typescript, Node, GraphQL, Postgres, Redis
+            Technologies include React, Node.js, Socket.IO, and PostgreSQL.
+          </caption>
+        </article>
+        <article class="work-item">
+          <h4>Compliance Manager</h4>
+          <div>
+            <a href="https://github.com/jmay4826/store-visits"
+              >(view on github)</a
+            >
+          </div>
+          <a href="https://github.com/jmay4826/store-visits" target="_blank">
+            <p
+              class="work-image"
+              style="background-image: url('https://www.jonathanrmay.com/img/portfolio/store.jpg');"
+            ></p>
+          </a>
+          <caption>
+            Technologies include AngularJS, JQuery, Node.js, and PostgreSQL.
           </caption>
         </article>
       </section>
     </main>
-    <aside>
-      <h2>
-        Here are some facts about me.
-      </h2>
-      <ul>
-        <li>
-          Social media isn't really my jam, but I made a
-          <a href="https://linkedin.com/in/jonathanrmay">LinkedIn</a> just for
-          you.
-        </li>
-        <li>
-          Traveling definitely is my jam. I've visited half of the United States
-          and 15 countries so far.
-        </li>
-        <li>
-          Languages fascinate me, along with the cultures that surround them.
-        </li>
-        <li>
-          In a former life I was a teacher, and I enjoy finding ways to bring
-          education into my current career.
-        </li>
-      </ul>
-    </aside>
   </body>
 </html>

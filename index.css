@@ -1,6 +1,15 @@
 body {
   font-family: "Raleway";
   font-weight: 400;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+header {
+  /* min-height: 65vh; */
+  margin-top: 20vh;
+  width: 75vw;
 }
 
 h1,
@@ -16,6 +25,16 @@ h5 {
 
 h1 {
   font-weight: 900;
+  font-size: 2rem;
+}
+
+h3 {
+  margin-top: 3vh;
+}
+
+h4 {
+  font-size: 1.25rem;
+  font-weight: bold;
 }
 
 main {
@@ -23,16 +42,39 @@ main {
 }
 
 section {
+  width: 75vw;
+}
+
+.work-section {
+  margin-top: 2vh;
   display: flex;
+  justify-content: space-between;
   flex-wrap: wrap;
-  justify-content: space-around;
 }
 
-article {
-  /* border: 1px solid lightblue; */
-  max-width: 20vw;
+.work-item {
+  flex-basis: 30%;
+  margin: 2vh 0;
 }
 
-img {
-  max-height: 20vh;
+.work-image {
+  min-height: 25vh;
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  box-shadow: 0 0 2px 0 rgba(150, 150, 150, 1);
+}
+
+@media (max-width: 450px) {
+  .work-item {
+    flex-basis: 100vw;
+  }
+  header {
+    margin-top: 5vh;
+    width: 90vw;
+  }
+
+  section {
+    width: 90vw;
+  }
 }
